@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Block-Berthold-Extra-Condensed.woff';
+    list-style: none;
+}
+
+p{
+    font-family: 'Margem-Medium';
+}
+
+img{
+    width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+a{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Margem-Medium';
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0429rem;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+header{
+    background-color: white;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.6rem 0;
+        user-select: none;
+        ul{
+            display: flex;
+            gap: 7.2rem;
+            li{
+                cursor: pointer;
+                color: #59291C;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                span{
+                    margin-left: 1.2rem;
+                    font-size: 1.4rem;
+                }
+                img{
+                    max-width: 1.6rem;
+                }
+                .menu{
+                    max-width: 2.6rem;
+                }
+            }
+        }
+    }
+}

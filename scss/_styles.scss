@@ -121,22 +121,28 @@
                 }
                 .whopper{
                     position: absolute;
-                    bottom: -5rem;
                     width: 58.5rem;
                     left: 10.6rem;
                     z-index: 2;
+                    animation: whopper 0.9s ease forwards;
                 }
                 .pepsi{
                     position: absolute;
-                    bottom: -1rem;
+                    bottom: -10rem;
+                    opacity: 0;
                     left: 6rem;
                     width: 27rem;
+                    animation: pepsi 0.9s ease forwards;
+                    animation-delay: .6s;
                 }
                 .fritas{
                     position: absolute;
-                    bottom: 0;
+                    bottom: -10;
+                    opacity: 0;
                     right: -7rem;
                     width: 26.4rem;
+                    animation: fritas 0.9s ease forwards;
+                    animation-delay: .9s;
                 }
                 .logo-bk{
                     position: absolute;
@@ -280,6 +286,145 @@
                 }
             }
         }
+        .slide{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 6.2rem;
+            
+            .btn-prev{
+                cursor: pointer;
+                img{
+                    max-width: 6.6rem;
+                }
+                &.swiper-button-disabled{
+                    opacity: 0.6;
+                    filter: grayscale(100%);
+                    cursor: not-allowed;
+                    pointer-events: none;
+                }
+            }
+            .btn-prev-left{
+                position: absolute;
+                bottom: 45%;
+                left: -3rem;
+                z-index: 2;
+            }
+            .btn-prev-right{
+                position: absolute;
+                bottom: 45%;
+                right: -3rem;
+                z-index: 2;
+            }
+            .swiper{
+                margin-bottom: 4.7rem;
+                .swiper-wrapper{
+                    
+                    .card-combo{
+                        width: 38.5rem;
+                        height: 49.3rem;
+                        cursor: pointer;
+                        background-color: #F5ECE7;
+                        border-radius: .6rem;
+                        position: relative;
+                        .combo{
+                            overflow: hidden;
+                            height: 34.4rem;
+                            border-radius: .6rem;
+                            img{
+                                transition: all 0.4s ease;
+                            }
+                        }
+                        &:hover{
+                            .combo{
+                                img{
+                                transform: scale(106%);
+                                }
+                            }
+                        }
+                        .text{
+                            padding: 3.2rem 0 4.4rem 4.4rem;
+                            h4{
+                                color: #59291C;
+                                font-size: 1.6rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: -0.201px;
+                                margin-bottom: 1.2rem;
+                            }
+                            .price{
+                                color: #ED7902;
+                                font-size: 3.2rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 1.477px;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .line{
+                            position: absolute;
+                            bottom: 14rem;
+                        }
+                        button{
+                            position: absolute;
+                            top: 2.6rem;
+                            right: 2.6rem;
+                            width: 3.8rem;
+                            height: 3.8rem;
+                            border-radius: 50%;
+                            background-color: white;
+                            img{
+                                margin-top: 0.4rem;
+                                max-width: 1.4rem;
+                            }
+                            &:hover{
+                                background-color: rgb(255, 219, 175);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ctrl{
+            margin-bottom: 6.9rem;
+            display: flex;
+            justify-content: space-between;
+            .swiper-pagination{
+                position: relative;
+                bottom: 0;
+                width: auto;
+                &-bullet{
+                    background-color: #FAAF18;
+                    opacity: 0.5;
+                    transition: all .3s ease;
+                    &-active{
+                        opacity: 1;
+                        background-color: #FAAF18;
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            button{
+                display: flex;
+                background-color:#FFF;
+                align-items: center;
+                gap: 1.4rem;
+                span{
+                    color: #FAAF18;
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.0176rem;
+                    text-transform: uppercase;
+                }
+                img{
+                    max-width: .8rem;
+                }
+            }
+        }
     }
 }
 
@@ -291,7 +436,6 @@ footer{
     justify-content: center;
     .container{
         display: flex;
-        align-items: center;
         .itens{
             display: flex;
             gap: 2.8rem;

@@ -1,0 +1,32 @@
+@keyframes whopper {
+    0% {
+        opacity: 0;
+        bottom: -10rem;
+     }
+    100% {
+        opacity: 1;
+        bottom: -5rem;
+    }
+}
+
+@keyframes pepsi {
+    0% {
+        opacity: 0;
+        bottom: -10rem;
+     }
+    100% {
+        opacity: 1;
+        bottom: -1rem;
+    }
+}
+
+@keyframes fritas {
+    0% {
+        opacity: 0;
+        bottom: -10rem;
+     }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}

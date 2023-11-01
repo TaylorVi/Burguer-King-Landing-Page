@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.min.css">
     <link
     rel="stylesheet"
@@ -14,10 +15,10 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
+            <div class="logo" data-aos="fade-right">
                 <a href=""><img src="/img/logo.svg" alt=""></a>
             </div>
-            <ul>
+            <ul data-aos="fade-left">
                 <li>
                     <img src="/img/icon-register.svg" alt="">
                     <span>Cadastre-se</span>
@@ -34,7 +35,7 @@
     </header>
     <div class="s-hero">
         <div class="container">
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-delay="200">
                 <div class="text">
                     <h2>01 combo</h2>
                     <img src="/img/Path 4 (1).svg" alt="">
@@ -49,7 +50,7 @@
                     <img src="/img/arrow-btn.svg" alt="">
                 </div>
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-delay="200">
                 <div class="bg-right">
                     <img class="grelhado" src="/img/grelhado-no-fogo.png" alt="">
                     <div class="promotion">
@@ -70,12 +71,12 @@
     </div>
     <div class="s-register">
         <div class="container">
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-delay="400">
                 <h3>Faça login e descubra</h3>
                 <h2>OFERTAS EXCLUSIVAS</h2>
             </div>
-            <img class="seta" src="/img/arrow-double.svg" alt="">
-            <button>
+            <img data-aos="fade-right" data-aos-delay="500" class="seta" src="/img/arrow-double.svg" alt="">
+            <button data-aos="fade-left" data-aos-delay="400">
                 <img src="/img/facebook copy.svg" alt="">
                 Cadastre-se pelo facebook
             </button>
@@ -83,12 +84,12 @@
     </div>
     <div class="s-itens">
         <div class="container">
-            <div class="itens">
-                <button class="stars" >
+            <div class="itens" data-aos="fade-up">
+                <button class="stars">
                     <img src="img/stars.svg" alt="">
                     <span>Destaques <br> imperdíveis</span>
                 </button>
-                <button class="carne">
+                <button class="carne" >
                     <img src="img/carne.svg" alt="">
                 </button>
                 <button class="frango">
@@ -101,7 +102,7 @@
                     <img src="img/acompanha.svg" alt="">
                 </button>
             </div>
-            <div class="slide">
+            <div class="slide" data-aos="fade-up" data-aos-delay="300">
                 <div class="btn-prev-left btn-prev">
                     <img src="/img/arrow-slide-left.svg" alt="">
                 </div>    
@@ -212,7 +213,7 @@
                     <img src="/img/arrow-slide-right.svg" alt="">
                 </div>
             </div>
-            <div class="ctrl">
+            <div class="ctrl" data-aos-delay="300" data-aos="fade-up">
                 <div class="swiper-pagination">
 
                 </div>
@@ -252,6 +253,7 @@
     <div class="footerTwo">
         <p>TM & © 2018 Burger King Corporation. Todos os direitos reservados.</p>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

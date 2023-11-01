@@ -12,3 +12,9 @@ var swiper = new Swiper('.swiper', {
       },
     
   });
+
+  AOS.init({
+    duration: 1000,
+    once: true,
+    
+  });
